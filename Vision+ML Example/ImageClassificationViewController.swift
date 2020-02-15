@@ -19,14 +19,37 @@ class ImageClassificationViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var classificationLabel: UILabel!
     @IBAction func yes(_ sender: Any) {
-        
+        do {
+            func getDirectoryPath() -> String {
+            let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+            let documentsDirectory = paths[0]
+                return documentsDirectory
+            }
+            // get the documents folder url
+            if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                // create the destination url for the text file to be saved
+                let fileURL = documentDirectory.appendingPathComponent("file.txt")
+                // define the string/text to be saved
+                let text = "Hello World !!!"
+                // writing to disk
+                // Note: if you set atomically to true it will overwrite the file if it exists without a warning
+                try text.write(to: fileURL, atomically: false, encoding: .utf8)
+                print("saving was successful")
+                // any posterior code goes here
+                // reading from disk
+                let savedText = try String(contentsOf: fileURL)
+                print("savedText:", savedText)   // "Hello World !!!\n"
+            }
+        } catch {
+            print("error:", error)
+        }
     }
     @IBAction func no(_ sender: Any) {
         textField.isHidden = false
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-       textField.isHidden = true
+        textField.isHidden = true
         
         textField.delegate = self
        
