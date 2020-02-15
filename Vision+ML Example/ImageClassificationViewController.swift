@@ -13,10 +13,15 @@ import ImageIO
 class ImageClassificationViewController: UIViewController {
     // MARK: - IBOutlets
     
+    @IBOutlet weak var testlabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var classificationLabel: UILabel!
-    
+    @IBAction func yes(_ sender: Any) {
+        testlabel.text = "Yes this worked"
+    }
+    @IBAction func no(_ sender: Any) {
+    }
     // MARK: - Image Classification
     
     /// - Tag: MLModelSetup
