@@ -25,9 +25,12 @@ class ImageClassificationViewController: UIViewController {
         textField.isHidden = false
     }
     override func viewDidLoad() {
+        super.viewDidLoad()
        textField.isHidden = true
         
         
+       
+       
         
     }
 
