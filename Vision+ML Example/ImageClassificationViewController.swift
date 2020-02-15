@@ -18,6 +18,7 @@ class ImageClassificationViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var classificationLabel: UILabel!
+    
     @IBAction func yes(_ sender: Any) {
         do {
             func getDirectoryPath() -> String {
@@ -46,14 +47,13 @@ class ImageClassificationViewController: UIViewController, UITextFieldDelegate{
     }
     @IBAction func no(_ sender: Any) {
         textField.isHidden = false
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.isHidden = true
         
         textField.delegate = self
-       
-        
         
     }
 
@@ -197,7 +197,7 @@ let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
             let url = NSURL.fileURL(withPath: imagepath)
             do {
                 try image.jpegData(compressionQuality: 1.0)?.write(to: url, options: .atomic)
-                return String.init("/Documents/\(imagename)")
+                return String.init("\(imagepath)")
             } catch {
                 print(error)
                 print("file can't be saved at path \(imagepath), with error: \(error)")
