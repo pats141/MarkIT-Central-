@@ -177,6 +177,35 @@ let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
         let image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as! UIImage
         imageView.image = image
         updateClassifications(for: image)
+//        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+        
+        
+        func saveImageToDocumentDirectory(_ image: UIImage) -> String {
+            let directoryPath = NSHomeDirectory().appending("/Documents/")
+            if !FileManager.default.fileExists(atPath: directoryPath) {
+                do {
+                    try FileManager.default.createDirectory(at: NSURL.fileURL(withPath: directoryPath), withIntermediateDirectories: true, attributes: nil)
+                } catch {
+                    print(error)
+                }
+            }
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyyMMddhhmmss"
+            let imagename = dateFormatter.string(from: Date()).appending(".jpg")
+            let imagepath = directoryPath.appending(imagename)
+            let url = NSURL.fileURL(withPath: imagepath)
+            do {
+                try image.jpegData(compressionQuality: 1.0)?.write(to: url, options: .atomic)
+                return String.init("/Documents/\(imagename)")
+            } catch {
+                print(error)
+                print("file can't be saved at path \(imagepath), with error: \(error)")
+                return imagepath
+            }
+        }
+        
+        print(saveImageToDocumentDirectory(image))
     }
 }
 
