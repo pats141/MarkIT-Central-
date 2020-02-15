@@ -27,7 +27,6 @@
 		11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		113695D71EC1151400CA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B7D74A423F788BD00352560 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
-		A9558E70A9563BA000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		A9666960A9666AD000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C858E5CC1ECA99CC006C5CAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C89947D91F4639A8005C0A19 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = Model/MobileNet.mlmodel; sourceTree = "<group>"; };
@@ -80,7 +79,6 @@
 		A9563AD0A9557D1000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				A9558E70A9563BA000000001 /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -138,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11063F591EC0EECC0033EE6D /* Build configuration list for PBXProject "Vision+ML Example" */;
+			buildConfigurationList = 11063F591EC0EECC0033EE6D /* Build configuration list for PBXProject "MarkIT Central" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,7 +205,6 @@
 /* Begin XCBuildConfiguration section */
 		11063F6E1EC0EECC0033EE6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -266,7 +263,6 @@
 		};
 		11063F6F1EC0EECC0033EE6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -318,7 +314,6 @@
 		};
 		11063F711EC0EECC0033EE6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
@@ -335,7 +330,6 @@
 		};
 		11063F721EC0EECC0033EE6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
@@ -353,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11063F591EC0EECC0033EE6D /* Build configuration list for PBXProject "Vision+ML Example" */ = {
+		11063F591EC0EECC0033EE6D /* Build configuration list for PBXProject "MarkIT Central" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11063F6E1EC0EECC0033EE6D /* Debug */,
