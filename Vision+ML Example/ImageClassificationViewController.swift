@@ -13,17 +13,24 @@ import ImageIO
 class ImageClassificationViewController: UIViewController {
     // MARK: - IBOutlets
     
-    @IBOutlet weak var testlabel: UILabel!
+    
+    @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var classificationLabel: UILabel!
     @IBAction func yes(_ sender: Any) {
-        testlabel.text = "Yes this worked"
+        
     }
     @IBAction func no(_ sender: Any) {
+        textField.isHidden = false
     }
-    
-    
+    override func viewDidLoad() {
+       textField.isHidden = true
+        
+        
+        
+    }
+
     // MARK: - Image Classification
     
     /// - Tag: MLModelSetup

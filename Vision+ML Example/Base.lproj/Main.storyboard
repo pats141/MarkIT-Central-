@@ -77,7 +77,6 @@
                                 </state>
                                 <connections>
                                     <action selector="yes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSi-Xi-axU"/>
-                                    <segue destination="Kkx-7D-ByX" kind="showDetail" id="LnH-Wc-F2p"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-fd-ENE">
@@ -107,27 +106,12 @@
                         <outlet property="cameraButton" destination="wDM-ZZ-cal" id="dfL-T0-Rh1"/>
                         <outlet property="classificationLabel" destination="zmt-pk-Cvs" id="YGh-Hq-ubS"/>
                         <outlet property="imageView" destination="ikj-rf-AXs" id="MjC-cW-qE8"/>
+                        <outlet property="textField" destination="Dhw-fd-ENE" id="L7T-m7-tV5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139.13043478260872" y="137.94642857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="D1i-KV-7hX">
-            <objects>
-                <viewController id="Kkx-7D-ByX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jyg-82-Dmc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Dcr-4R-nFw"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="BOo-If-0bO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IVN-gt-NJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="830" y="171"/>
         </scene>
     </scenes>
 </document>
