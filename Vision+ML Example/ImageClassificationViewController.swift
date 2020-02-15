@@ -10,7 +10,7 @@ import CoreML
 import Vision
 import ImageIO
 
-class ImageClassificationViewController: UIViewController {
+class ImageClassificationViewController: UIViewController, UITextFieldDelegate{
     // MARK: - IBOutlets
     
     
@@ -28,12 +28,16 @@ class ImageClassificationViewController: UIViewController {
         super.viewDidLoad()
        textField.isHidden = true
         
-        
+        textField.delegate = self
        
        
         
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     // MARK: - Image Classification
     
     /// - Tag: MLModelSetup
