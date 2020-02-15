@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0556978D275E41DD1D3B84EF /* Pods_Vision_ML_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547EDF14A8E95D995F40BD84 /* Pods_Vision_ML_Example.framework */; };
 		11063F621EC0EECC0033EE6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11063F611EC0EECC0033EE6D /* AppDelegate.swift */; };
 		11063F641EC0EECC0033EE6D /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11063F631EC0EECC0033EE6D /* ImageClassificationViewController.swift */; };
 		11063F671EC0EECC0033EE6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11063F651EC0EECC0033EE6D /* Main.storyboard */; };
 		11063F691EC0EECC0033EE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11063F681EC0EECC0033EE6D /* Assets.xcassets */; };
 		11063F741EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		113695D81EC1151400CA6C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113695D61EC1151400CA6C43 /* LaunchScreen.storyboard */; };
+		896F166F23F7A49B00EBD5A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 896F166E23F7A49B00EBD5A8 /* GoogleService-Info.plist */; };
 		8B7D74A523F788BD00352560 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D74A423F788BD00352560 /* Resnet50.mlmodel */; };
 		C89947DA1F4639D6005C0A19 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C89947D91F4639A8005C0A19 /* MobileNet.mlmodel */; };
 /* End PBXBuildFile section */
@@ -26,10 +28,14 @@
 		11063F6D1EC0EECC0033EE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		113695D71EC1151400CA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E9B2FC4E9963E14BCA5BFDD /* Pods-Vision+ML Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision+ML Example.debug.xcconfig"; path = "Target Support Files/Pods-Vision+ML Example/Pods-Vision+ML Example.debug.xcconfig"; sourceTree = "<group>"; };
+		547EDF14A8E95D995F40BD84 /* Pods_Vision_ML_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vision_ML_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		896F166E23F7A49B00EBD5A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8B7D74A423F788BD00352560 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		A9666960A9666AD000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C858E5CC1ECA99CC006C5CAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C89947D91F4639A8005C0A19 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = Model/MobileNet.mlmodel; sourceTree = "<group>"; };
+		F3B10392977D821810CD53F3 /* Pods-Vision+ML Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision+ML Example.release.xcconfig"; path = "Target Support Files/Pods-Vision+ML Example/Pods-Vision+ML Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0556978D275E41DD1D3B84EF /* Pods_Vision_ML_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +58,8 @@
 				11063F5F1EC0EECC0033EE6D /* Products */,
 				A9563AD0A9557D1000000001 /* Configuration */,
 				A96664E0A96664B000000001 /* LICENSE */,
+				F448A8E7EA0DE5384AFABB67 /* Pods */,
+				A85B5387D36F62AB001F742C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +85,14 @@
 			path = "Vision+ML Example";
 			sourceTree = "<group>";
 		};
+		A85B5387D36F62AB001F742C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				547EDF14A8E95D995F40BD84 /* Pods_Vision_ML_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9563AD0A9557D1000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +113,20 @@
 			children = (
 				11063F681EC0EECC0033EE6D /* Assets.xcassets */,
 				11063F6D1EC0EECC0033EE6D /* Info.plist */,
+				896F166E23F7A49B00EBD5A8 /* GoogleService-Info.plist */,
 				113695D61EC1151400CA6C43 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F448A8E7EA0DE5384AFABB67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E9B2FC4E9963E14BCA5BFDD /* Pods-Vision+ML Example.debug.xcconfig */,
+				F3B10392977D821810CD53F3 /* Pods-Vision+ML Example.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11063F701EC0EECC0033EE6D /* Build configuration list for PBXNativeTarget "Vision+ML Example" */;
 			buildPhases = (
+				5583CB571ABA050D77571BE3 /* [CP] Check Pods Manifest.lock */,
 				11063F5A1EC0EECC0033EE6D /* Sources */,
 				11063F5B1EC0EECC0033EE6D /* Frameworks */,
 				11063F5C1EC0EECC0033EE6D /* Resources */,
+				CA64CB2A9180BB7FCE18766C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,12 +190,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				113695D81EC1151400CA6C43 /* LaunchScreen.storyboard in Resources */,
+				896F166F23F7A49B00EBD5A8 /* GoogleService-Info.plist in Resources */,
 				11063F691EC0EECC0033EE6D /* Assets.xcassets in Resources */,
 				11063F671EC0EECC0033EE6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5583CB571ABA050D77571BE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vision+ML Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA64CB2A9180BB7FCE18766C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vision+ML Example/Pods-Vision+ML Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vision+ML Example/Pods-Vision+ML Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11063F5A1EC0EECC0033EE6D /* Sources */ = {
@@ -314,6 +392,7 @@
 		};
 		11063F711EC0EECC0033EE6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9B2FC4E9963E14BCA5BFDD /* Pods-Vision+ML Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
@@ -330,6 +409,7 @@
 		};
 		11063F721EC0EECC0033EE6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B10392977D821810CD53F3 /* Pods-Vision+ML Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
