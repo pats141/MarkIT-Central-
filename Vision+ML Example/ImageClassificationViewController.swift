@@ -30,7 +30,7 @@ class ImageClassificationViewController: UIViewController, UITextFieldDelegate{
         
         textField.delegate = self
        
-       
+        
         
     }
 
@@ -38,6 +38,7 @@ class ImageClassificationViewController: UIViewController, UITextFieldDelegate{
         textField.resignFirstResponder()
         return true
     }
+    
     // MARK: - Image Classification
     
     /// - Tag: MLModelSetup
