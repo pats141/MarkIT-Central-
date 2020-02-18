@@ -20,3 +20,7 @@ Basics of Swift/Xcode, little bit of UI/UX, fundamental machine learning
 
 ## What's next for MarkIT Central
 Available data on market central food from Sodexo, cloud integration with database for review system. Also, improvement in machine learning algorithm for reinforcement learning and detection of most significant object in photo.
+
+## Links and other media
+Proto.io concept: https://share.proto.io/0DIKR0/
+Pitch deck: https://bit.ly/markit-central
